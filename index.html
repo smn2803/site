@@ -52,17 +52,16 @@
                </tr>
                <? while($user = mysql_fetch_array($users)): ?>
                <tr>
-                   <td><?=$user['id']?>&nbsp;</td>
-                   <td><?=$user['full_name']?>&nbsp;</td>
-                   <td><?=$user['email']?>&nbsp;</td>
-                   <td><?=$user['username']?>&nbsp;</td>
-                   <td><?=$user['state'] == 1 ? '&nbspbun&nbsp&nbsp': 'unban'?></td>
+                   <td><?=$user['id']?><input type="text"></td>
+                   <td><?=$user['full_name']?><input type="text"></td>
+                   <td><?=$user['email']?><input type="text"></td>
+                   <td><?=$user['username']?><input type="text"></td>
+                   <td><?=$user['state']?><input type="text"></td>
 
-                   <? if($user['state'] == 1): ?>
-                   <td><input name="block[<?=$user['id']?>]" type="submit" value="Заблокировать" /></td>
-                   <? else: ?>
-                   <td><input name="unblock[<?=$user['id']?>]" type="submit" value="Разблокировать" /></td>
-                   <? endif; ?>
+                 <!-- <td><input name="block[<?=$user['id']?>]" type="submit" value="Заблокировать" /></td>
+                 <? else: ?>
+                 <td><input name="unblock[<?=$user['id']?>]" type="submit" value="Разблокировать" /></td>
+                 <? endif; ?> -->
                </tr>
                <? endwhile; ?>
            </table>
@@ -70,26 +69,6 @@
    </div>
 
        <a href = "https://www.instagram.com/aleksandr_makhankov/" > <button id="btn" class="btnst" onclick="myFunction()">0</button></a>
-<a href=https://smn2803.github.io/site/ target=_blank onClick=javascript:location.href=index.php?id=5&url=https://smn2803.github.io/site/>
-
-
-
-
-
-
-
-
-         <div id="qooi-counter">
-<a style="display:none;" href="http://qooi.ru/" title="Бесплатный счетчик посещений на сайт">
-<img src="http://qooi.ru/counter/standard/009.png" alt="Счетчик посещаемости и статистика сайта">
-</a>
-Визиты: <div id="qooi-counter-visits"></div>
-Просмотры: <div id="qooi-counter-views"></div>
-</div>
-<script type="text/javascript" src="http://qooi.ru/counter.js"></script>
-
-
-
 
 
 
@@ -104,6 +83,17 @@
              </h3>
          <h2><b>го лайк, на аву хоть, хахахахах</b></h2>
          <h2><b><font color="magenta"> а тут он уже фиолетовый, каеееееф </font></b></h2>
+
+
+
+
+
+         <input type="text">
+
+
+
+
+
                 </body>
      </html>
   <script>  let count = 0
@@ -113,3 +103,4 @@
 
      }
 </script>
+
